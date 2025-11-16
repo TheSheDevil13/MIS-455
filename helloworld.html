@@ -4,6 +4,94 @@
     <title>Hello World</title>
 </head>
 <body>
+    <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
     <h1>Successfully Connected</h1>
+    <p>HTML Attributes are special words used within the opening tag of an HTML element. They provide additional information about HTML elements. HTML attributes are used to configure and adjust the element's behavior, appearance, or functionality in a variety of ways.</p>
+<table>
+    <caption>HTML Attributes Reference</caption>
+    <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>href</td>
+        <td>Specifies the URL of a link</td>
+    </tr>
+    <tr>
+        <td>srcccc</td>
+        <td>Specifies the path to an image or script file</td>
+    </tr>
+    <tr>
+        <td>alt</td>
+        <td>Provides alternative text for an image</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>Defines a title for an element (displayed as a tooltip)</td>
+    </tr>
+    <tr>
+        <td>style</td>
+        <td>Adds inline CSS styles to an element</td>
+    </tr>
+</table>
+<ul>
+    <li>HTML attributes are always included in the opening tag of an element.</li>
+    <li>Most attributes have a value assigned to them using the equals sign (=).</li>
+    <li>Attribute values are usually enclosed in double quotes ("").</li>
+    <li>Some attributes, like "disabled" or "checked", are boolean and do not require a value.</li>
+    <li>Attributes can be used to enhance accessibility, such as the "aria-" attributes.</li>
+    <li>Global attributes, like "class" and "id", can be applied to any HTML element.</li>
+    <li>Custom data attributes (data-*) allow you to store extra information on standard HTML elements.</li>
+</ul>
+<button onclick="alert('Hello!')">Click Me</button>
+<h2>onchange Event Demo</h2>
+
+  <label for="colorPicker">Pick a color:</label>
+  <input type="color" id="colorPicker" 
+         onchange="document.body.style.backgroundColor = this.value;">
+
+  <p>When you pick a color, the page background changes immediately!</p>
+
+<ol>
+    <li>HTML attributes are case-insensitive, but it's a common practice to use lowercase.</li>
+    <li>Some attributes are specific to certain HTML elements, while others are global.</li>
+    <li>Using attributes effectively can improve the functionality and user experience of a webpage.</li>
+</ol>
+<p>
+    <b>Bold text:</b> This word is <b>bold</b> — it only looks bold but has no semantic importance.
+  </p>
+
+  <p>
+    <em>Emphasized text:</em> This word is <em>emphasized</em> — it’s italic and semantically stressed.
+  </p>
+
+  <p>
+    <strong>Strong text:</strong> This word is <strong>important</strong> — it’s bold and carries semantic meaning.
+  </p>
+<h3>Programming Languages</h3>
+<dl>
+  <dt>Python</dt>
+  <dd>A high-level language known for its readability and versatility.</dd>
+
+  <dt>JavaScript</dt>
+  <dd>The language of the web, used for creating interactive pages.</dd>
+
+  <dt>HTML</dt>
+  <dd>The standard markup language for creating webpages.</dd>
+</dl>
+<article>
+  <h2>How I Built My First Website</h2>
+  <p>I started learning HTML and CSS last summer. Here's how it went...</p>
+  <footer>Written by Mymuna Rahman — October 11, 2025</footer>
+</article>
+
 </body>
 </html>

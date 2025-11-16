@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example Form</title>
+</head>
+<body>
+
+<form 
+    action="https://example.com/submit"  <!-- URL to send form data -->
+    method="POST"                       <!-- HTTP method -->
+    target="_blank"                      <!-- Open result in new tab -->
+    enctype="multipart/form-data"        <!-- Encoding type -->
+    name="myForm"
+    accept-charset="UTF-8"
+    autocomplete="on"
+    novalidate>                          <!-- Skip HTML validation -->
+
+  <fieldset>
+    <legend>Personal Info</legend>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio" rows="4" cols="30"></textarea>
+    <br><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <label for="color">Favorite Color:</label>
+    <input list="colors" name="color" id="color">
+    <datalist id="colors">
+      <option value="Red">
+      <option value="Green">
+      <option value="Blue">
+    </datalist>
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <br><br>
+
+    <output name="result" for="username email">Result will appear here</output>
+
+  </fieldset>
+
+</form>
+
+</body>
+</html>
